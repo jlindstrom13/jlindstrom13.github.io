@@ -65,3 +65,13 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+.profile-pic {
+  width: 180px;         
+  height: 180px;
+  border-radius: 50%;    /* makes it a circle */
+  object-fit: cover;     /* crops it neatly if it’s rectangular */
+  display: block;
+  margin: 0 auto 20px;   /* centers it above your text */
+  border: 3px solid #f4c2c2; /* optional: cute pastel border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* soft shadow */
+}
