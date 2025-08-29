@@ -75,3 +75,44 @@ html {
   border: 3px solid #f4c2c2; /* optional: cute pastel border */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* soft shadow */
 }
+#education {
+  background-color: #fffaf0; /* subtle pastel background */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#education h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.edu-item {
+  margin-bottom: 30px;
+  text-align: left; /* aligns text nicely for multiple lines */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-left: 4px solid #f4c2c2; /* cute accent line */
+  background-color: #fff; 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.edu-item h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.edu-item .school {
+  font-weight: 500;
+  color: #666;
+}
+
+.edu-item .details {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 5px;
+}
