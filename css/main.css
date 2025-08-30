@@ -556,10 +556,18 @@ form,
   margin-bottom: 3.2rem;
 }
 
-.institution {
-  color: #f7dce0 !important; /* choose any color you like */
-  font-weight: bold; /* optional */
+/* Teaching section custom styles */
+.services-list__item-body p .institution {
+  color: #f7dce0 !important; /* light pink */
+  font-weight: bold;
 }
+
+.services-list__item-header .role-dates {
+  color: #888888 !important; /* gray for dates */
+  font-style: italic;
+  margin-left: 0.5rem; /* small space after title */
+}
+
 
 /* ===================================================================
  * # preloader
