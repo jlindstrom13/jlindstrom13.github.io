@@ -2847,7 +2847,10 @@ html.no-csstransitions .hero-content {
   position: relative;
   overflow: hidden;
 }
-
+.folio-item__project-links {
+  display: flex;
+  gap: 10px;
+}
 .folio-item__caption {
   display: none;
 }
