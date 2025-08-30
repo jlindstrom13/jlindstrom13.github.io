@@ -1,154 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jackie Lindstrom | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackie Lindstrom</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>Jackie Lindstrom</h1>
-    <p class="subtitle">MS Biostatistics </p>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section id="about">
-      <img src="PD5A0264.JPG" alt="Jackie Lindstrom" class="profile-pic" />
-      <h2>About</h2>
-      <p>Hi! I’m Jackie Lindstrom, a Biostatistics graduate student at University of Michigan with a background in math, chemistry, and Hispanic studies. I am passionate about applying my problem solving skills to challenges in data analysis, global public health, and medicine.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <img src="PD5A0264.JPG" alt="Jackie Lindstrom" class="profile-pic">
+      <h2>About Me</h2>
+      <p>Hi! I’m Jackie Lindstrom, a Biostatistics graduate student at University of Michigan with a background in Math, Chemistry, and Hispanic Studies. I am passionate about applying my problem-solving skills to challenges in data analysis, global public health, and medicine.</p>
     </section>
 
-   
+    <!-- Education Section -->
     <section id="education" class="section">
-  <h2>Education</h2>
-
-  <div class="edu-item">
-    <h3>Master of Science, Biostatistics</h3>
-    <p class="school">University of Michigan, Ann Arbor, MI | May 2026</p>
-    <p class="details">GPA: 3.84</p>
-  </div>
-
-  <div class="edu-item">
-    <h3>Bachelor of Science, Chemistry (Biochemistry)</h3>
-    <p class="school">Pacific Lutheran University, Tacoma, WA | May 2023</p>
-    <p class="details">GPA: 3.96 | Summa Cum Laude, Dean's List (All Semesters) | Minor: Hispanic Studies</p>
-  </div>
-
-  <div class="edu-item">
-    <h3>Bachelor of Arts, Mathematics</h3>
-    <p class="school">Pacific Lutheran University, Tacoma, WA | May 2023</p>
-    <p class="details">GPA: 3.96 | Summa Cum Laude, Dean's List (All Semesters)</p>
-  </div>
-
-  <div class="edu-item">
-    <h3>Study Abroad</h3>
-    <p class="school">University of Oxford, England (2021) | Instituto Cultural Oaxaca, Mexico (2022)</p>
-  </div>
-</section>
-
-  <section id="experience" class="section">
-  <h2>Relevant Work Experience</h2>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="timeline-left">
-        <h3>Machine Learning Summer Intern</h3>
-        <p class="company">Institute for Systems Biology | Seattle, WA</p>
-        <ul>
-          <li>Implemented machine learning algorithms such as Neural Nets, Naive Bayes, and Random Forest in Python to classify trials from clinicaltrials.gov into trustworthy or untrustworthy</li>
-          <li>Mentored by Dr. Glusman (Hood Lab) via NIH NCATS Biomedical Translator Consortium</li>
-          <li>Used Unix command line, SQL, and Git for version control</li>
-          <li>Performed dimension reduction including PCA and UMAP</li>
-        </ul>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>Master of Science, Biostatistics</h3>
+        <p>University of Michigan, Ann Arbor, MI | May 2026</p>
+        <p>GPA: 3.84</p>
       </div>
-      <div class="timeline-right">
-        <p>Jun 2025 – Aug 2025</p>
+      <div class="edu-item">
+        <h3>Bachelor of Science, Chemistry (Biochemistry)</h3>
+        <p>Pacific Lutheran University, Tacoma, WA | May 2023</p>
+        <p>GPA: 3.96 | Summa Cum Laude | Dean's List | Minor: Hispanic Studies</p>
       </div>
-    </div>
+      <div class="edu-item">
+        <h3>Bachelor of Arts, Mathematics</h3>
+        <p>Pacific Lutheran University, Tacoma, WA | May 2023</p>
+      </div>
+      <div class="edu-item">
+        <h3>Study Abroad</h3>
+        <p>University of Oxford, England (2021) | Instituto Cultural Oaxaca, Mexico (2022)</p>
+      </div>
+    </section>
 
-    <div class="timeline-item">
-      <div class="timeline-left">
-        <h3>Statistics Graduate Student Instructor</h3>
-        <p class="company">University of Michigan | Ann Arbor, MI</p>
-        <ul>
-          <li>Teach discussion sections for 40 students taking Introduction to Statistics for Social Sciences</li>
-          <li>Prepare biweekly lecture reviews, design weekly practice problems, hold office hours, and provide HW/exam feedback</li>
-          <li>Completed SOC 993: Teacher Training Course, gaining skills in pedagogy & curriculum planning</li>
-        </ul>
-      </div>
-      <div class="timeline-right">
-        <p>Aug 2024 – Present</p>
-      </div>
-    </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Relevant Work Experience</h2>
+      <div class="timeline">
 
-    <div class="timeline-item">
-      <div class="timeline-left">
-        <h3>Associate Scientist</h3>
-        <p class="company">Vertex Pharmaceuticals | Providence, RI</p>
-        <ul>
-          <li>Performed quality control and data validation using analytical instruments in the Cell and Genetic Therapies Department</li>
-          <li>Utilized LIMS to track quality control data and followed SOPs/GMP for compliance</li>
-          <li>Led lab optimization project and presented findings to management for improved efficiency and safety</li>
-        </ul>
-      </div>
-      <div class="timeline-right">
-        <p>Nov 2023 – Jul 2024</p>
-      </div>
-    </div>
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <h3>Machine Learning Summer Intern</h3>
+            <p class="company">Institute for Systems Biology | Seattle, WA</p>
+            <ul>
+              <li>Implemented ML algorithms (Neural Nets, Naive Bayes, Random Forest) in Python to classify clinicaltrials.gov trials</li>
+              <li>Mentored by Dr. Glusman (Hood Lab) via NIH NCATS Biomedical Translator Consortium</li>
+              <li>Used Unix, SQL, and Git for version control</li>
+              <li>Performed dimension reduction including PCA and UMAP</li>
+            </ul>
+          </div>
+          <div class="timeline-right">
+            <p>Jun 2025 – Aug 2025</p>
+          </div>
+        </div>
 
-    <div class="timeline-item">
-      <div class="timeline-left">
-        <h3>Adjunct Professor of Biology 1</h3>
-        <p class="company">Bryant University | Smithfield, RI</p>
-        <ul>
-          <li>Guided students through collaborative laboratory experiments introducing life processes</li>
-          <li>Taught scientific methodology, cells, energy/metabolism, genetics, and ecology</li>
-        </ul>
-      </div>
-      <div class="timeline-right">
-        <p>Jan 2024 – May 2024</p>
-      </div>
-    </div>
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <h3>Statistics Graduate Student Instructor</h3>
+            <p class="company">University of Michigan | Ann Arbor, MI</p>
+            <ul>
+              <li>Teach discussion sections for 40 students in Introduction to Statistics for Social Sciences</li>
+              <li>Prepare lecture reviews, weekly practice problems, hold office hours, and provide HW/exam feedback</li>
+              <li>Completed SOC 993: Teacher Training Course</li>
+            </ul>
+          </div>
+          <div class="timeline-right">
+            <p>Aug 2024 – Present</p>
+          </div>
+        </div>
 
-    <div class="timeline-item">
-      <div class="timeline-left">
-        <h3>Volunteer Translator</h3>
-        <p class="company">Clinica Esperanza Hope Clinic | Providence, RI</p>
-        <ul>
-          <li>Took vitals, documented patients' medical history, and scheduled appointments in Spanish</li>
-          <li>Provided care to an underserved, uninsured population</li>
-        </ul>
-      </div>
-      <div class="timeline-right">
-        <p>2020 – 2023</p>
-      </div>
-    </div>
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <h3>Associate Scientist</h3>
+            <p class="company">Vertex Pharmaceuticals | Providence, RI</p>
+            <ul>
+              <li>Performed quality control and data validation in the Cell and Genetic Therapies Department</li>
+              <li>Used LIMS to track data and followed SOPs/GMP standards</li>
+              <li>Led lab optimization project and presented findings to management</li>
+            </ul>
+          </div>
+          <div class="timeline-right">
+            <p>Nov 2023 – Jul 2024</p>
+          </div>
+        </div>
 
-    <div class="timeline-item">
-      <div class="timeline-left">
-        <h3>Emergency Medical Technician</h3>
-        <p class="company">Med Tech Ambulance | Warwick, RI</p>
-        <ul>
-          <li>Stabilized patients in medical emergencies and interhospital transport</li>
-        </ul>
-      </div>
-      <div class="timeline-right">
-        <p>Jun 2019 – Sep 2020</p>
-      </div>
-    </div>
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <h3>Adjunct Professor of Biology 1</h3>
+            <p class="company">Bryant University | Smithfield, RI</p>
+            <ul>
+              <li>Guided students through laboratory experiments introducing life processes</li>
+              <li>Taught scientific methodology, cells, energy/metabolism, genetics, and ecology</li>
+            </ul>
+          </div>
+          <div class="timeline-right">
+            <p>Jan 2024 – May 2024</p>
+          </div>
+        </div>
 
-  </div>
-</section>
+        <!-- Add more experience items here -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a href="Lindstrom.Capstone.Final.pdf" class="project-card" target="_blank">
+          <img src="images/project1.png" alt="Capstone Project">
+          <p class="project-title">Capstone Project</p>
+        </a>
+
+        <a href="PCA_Capstone.pdf" class="project-card" target="_blank">
+          <img src="images/project2.png" alt="PCA Project">
+          <p class="project-title">PCA Capstone</p>
+        </a>
+
+        <a href="PCA_Slides.pdf" class="project-card" target="_blank">
+          <img src="images/project3.png" alt="PCA Slides">
+          <p class="project-title">PCA Slides</p>
+        </a>
+
+        <a href="TutorialPresentationFinal.pptx" class="project-card" target="_blank">
+          <img src="images/project4.png" alt="Oxford Tutorial Presentation">
+          <p class="project-title">Tutorial Presentation</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lindstj@umich.edu">lindstj@umich.edu</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/j-lindstrom">linkedin.com/in/j-lindstrom</a></p>
+      <p>GitHub: <a href="https://github.com/jlindstrom13">github.com/jlindstrom13</a></p>
+    </section>
+
+  </main>
+</body>
+</html>
