@@ -116,3 +116,100 @@ html {
   color: #888;
   margin-top: 5px;
 }
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #ccc; /* vertical center line */
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: #f4c2c2;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -8px;
+}
+
+.timeline-item.right::before {
+  left: -8px;
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.timeline-content p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.timeline-content ul {
+  margin: 5px 0 0 20px;
+  padding: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Responsive: stack timeline on small screens */
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    padding: 20px 20px;
+  }
+  
+  .timeline-item.left, .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+  
+  .timeline-item::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
