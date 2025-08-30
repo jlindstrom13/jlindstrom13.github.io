@@ -556,17 +556,6 @@ form,
   margin-bottom: 3.2rem;
 }
 
-/* Teaching section custom styles */
-.services-list__item-body p .institution {
-  color: #f7dce0 !important; /* light pink */
-  font-weight: bold;
-}
-
-.services-list__item-header .role-dates {
-  color: #888888 !important; /* gray for dates */
-  font-style: italic;
-  margin-left: 0.5rem; /* small space after title */
-}
 
 
 /* ===================================================================
@@ -3498,3 +3487,17 @@ html.no-csstransitions .hero-content {
   }
 
 }
+
+/* Teaching section: force colors for institution and dates */
+.services-list__item-body p span.institution {
+    color: #f7dce0 !important; /* light pink */
+    font-weight: bold;
+}
+
+.services-list__item-header span.role-dates {
+    color: #888888 !important; /* gray */
+    font-style: italic;
+    float: right; /* move to right side of title */
+    font-size: 0.9em;
+}
+
