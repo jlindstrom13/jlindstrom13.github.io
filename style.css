@@ -169,9 +169,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-.project-image:hover .project-overlay {
-  opacity: 1;
-}
+
 
 .project-overlay p a {
   color: #fff;
