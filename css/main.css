@@ -3495,9 +3495,11 @@ html.no-csstransitions .hero-content {
 }
 
 .services-list__item-header span.role-dates {
-    color: #ffffff !important; /* white */
+    color: #f5e4ae !important; /* yellow */
     font-style: italic;
     float: right; /* move to right side of title */
-    font-size: 0.6em;
+    font-size: 0.5em;          /* smaller text */
+    line-height: 1;             /* reduces vertical spacing */
+    margin-left: 0.5rem;       /* optional spacing from text */
 }
 
