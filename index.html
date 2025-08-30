@@ -9,18 +9,37 @@
 <body>
 
   <!-- Header / Navigation -->
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.navbar li { margin: 0 15px; }
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover { text-decoration: underline; }
+
+/* Add top padding to body/main to prevent content from being hidden under fixed header */
+body, main {
+  padding-top: 70px; /* Adjust based on header height */
+}
   <main>
     <!-- About Section -->
     <section id="about" class="section">
@@ -171,47 +190,64 @@
 
       </div>
     </section>
-    <!-- Projects Section -->
+     <!-- Projects Section -->
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <a href="Lindstrom.Capstone.Final.pdf" class="project-card" target="_blank">
-          <div class="project-image" style="background-image: url('images/project1.png');">
-            <div class="project-overlay">
-              <p>Capstone Project</p>
-            </div>
-          </div>
-          <p class="project-title">Capstone Project</p>
-        </a>
 
+        <!-- PCA Project -->
         <a href="PCA_Capstone.pdf" class="project-card" target="_blank">
           <div class="project-image" style="background-image: url('images/PCA_image.jpg');">
             <div class="project-overlay">
-              <p> Math Capstone: Performed PCA to detect patterns in Iraqi migration data for the UN International Organization for Migration</p>
+              <p>Performed PCA to detect patterns in Iraqi migration data for the UN International Organization for Migration</p>
             </div>
           </div>
           <p class="project-title">PCA Capstone</p>
         </a>
 
-        <a href="ISB_ML_Poster.pdf" class="project-card" target="_blank">
-          <div class="project-image" style="background-image: url('images/ISB_logo.png');">
+        <!-- Regression Project -->
+        <a href="Group15report.pdf" class="project-card" target="_blank">
+          <div class="project-image" style="background-image: url('images/Regression_image.png');">
             <div class="project-overlay">
-              <p>Implemented ML algorithms in Python to classify clinicaltrials.gov trials</p>
+              <p>Unveiling Total Cholesterol Levels: Insights into key factors</p>
             </div>
           </div>
-          <p class="project-title">ISB Machine Learning</p>
+          <p class="project-title">Regression Project</p>
         </a>
 
+        <!-- Tutorial Project -->
         <a href="TutorialPresentationFinal.pptx" class="project-card" target="_blank">
-          <div class="project-image" style="background-image: url('images/project4.png');">
+          <div class="project-image" style="background-image: url('images/Oxford-University-square-logo.png');">
             <div class="project-overlay">
-              <p>Oxford Tutorial Presentation</p>
+              <p>Skin α-Synuclein Aggregation Seeding Activity as a Novel Biomarker for Parkinson Disease</p>
             </div>
           </div>
-          <p class="project-title">Tutorial Presentation</p>
+          <p class="project-title">Oxford Tutorial</p>
         </a>
+
+        <!-- Capstone Project -->
+        <a href="Lindstrom.Capstone.Final.pdf" class="project-card" target="_blank">
+          <div class="project-image" style="background-image: url('images/Lithium20Ion20Cell203.png');">
+            <div class="project-overlay">
+              <p>Novel solid polymer electrolyte for lithium ion batteries</p>
+            </div>
+          </div>
+          <p class="project-title">Capstone Project</p>
+        </a>
+
+        <!-- Proofs Portfolio -->
+        <a href="proofs.pdf" class="project-card" target="_blank">
+          <div class="project-image" style="background-image: url('images/proofs.pdf.png');">
+            <div class="project-overlay">
+              <p>Proofs Portfolio</p>
+            </div>
+          </div>
+          <p class="project-title">Proofs Portfolio</p>
+        </a>
+
       </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="section">
