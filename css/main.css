@@ -2480,6 +2480,33 @@ html.no-csstransitions .hero-content {
   left: calc(50% + 80px);
 }
 
+/* ==========================
+   Education Section
+   ========================== */
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.education-list li {
+  margin-bottom: 18px;
+  padding-left: 20px;
+  border-left: 3px solid #1E90FF;
+}
+
+.education-list li strong {
+  font-size: 1.05em;
+  color: #333;
+  display: block;
+}
+
+.education-list li em {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
 /* ------------------------------------------------------------------- 
  * ## career position
  * ------------------------------------------------------------------- */
