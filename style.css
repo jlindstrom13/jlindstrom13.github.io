@@ -116,100 +116,65 @@ html {
   color: #888;
   margin-top: 5px;
 }
+/* Timeline container */
 .timeline {
   position: relative;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin-top: 40px;
+  padding-left: 20px;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background-color: #ccc; /* vertical center line */
-}
-
+/* Timeline items */
 .timeline-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
   position: relative;
-  width: 50%;
-  padding: 20px 40px;
-  box-sizing: border-box;
 }
 
-.timeline-item.left {
-  left: 0;
-  text-align: right;
-}
-
-.timeline-item.right {
-  left: 50%;
-  text-align: left;
-}
-
+/* Vertical line */
 .timeline-item::before {
   content: '';
   position: absolute;
-  top: 20px;
-  width: 16px;
-  height: 16px;
-  background-color: #f4c2c2;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  z-index: 1;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
 }
 
-.timeline-item.left::before {
-  right: -8px;
+/* Left content */
+.timeline-left {
+  max-width: 65%;
+  text-align: left;
 }
 
-.timeline-item.right::before {
-  left: -8px;
+.timeline-left h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #222;
 }
 
-.timeline-content {
-  background-color: #fff;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
-}
-
-.timeline-content h3 {
-  margin-top: 0;
-  color: #333;
-}
-
-.timeline-content p {
-  color: #555;
+.timeline-left .company {
   font-size: 0.95rem;
-  margin: 5px 0;
+  color: #555;
+  font-weight: 500;
+  margin: 2px 0;
 }
 
-.timeline-content ul {
-  margin: 5px 0 0 20px;
-  padding: 0;
+.timeline-left ul {
+  margin: 0;
+  padding-left: 20px;
   color: #555;
   font-size: 0.95rem;
 }
 
-/* Responsive: stack timeline on small screens */
-@media (max-width: 768px) {
-  .timeline-item {
-    width: 100%;
-    padding: 20px 20px;
-  }
-  
-  .timeline-item.left, .timeline-item.right {
-    left: 0;
-    text-align: left;
-  }
-  
-  .timeline-item::before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
+/* Right content (dates) */
+.timeline-right {
+  max-width: 25%;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 500;
+  margin-top: 5px;
 }
