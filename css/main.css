@@ -557,7 +557,7 @@ form,
 }
 
 .institution {
-  color: #f7dce0; /* choose any color you like */
+  color: #f7dce0 !important; /* choose any color you like */
   font-weight: bold; /* optional */
 }
 
