@@ -2920,6 +2920,11 @@ html.no-csstransitions .hero-content {
   position: absolute;
   left: 0;
   top: 3.6rem;
+  width: 100%;         /* make image span full width of the box */
+  height: 100%;        /* make image span full height of the box */
+  object-fit: cover;   /* fill box while cropping if needed */
+  object-position: center; /* center the image */
+  display: block;      /* removes inline spacing */
 }
 
 .folio-item__title {
